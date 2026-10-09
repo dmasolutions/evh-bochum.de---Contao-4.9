@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>dev</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- build:css styles/vendor.css -->
+		<!-- bower:css -->
+
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+	</head>
+	<body>
+		<div id="mobileTopBar" class="mobile visible-xs"></div>
+		<a class="mobileNavTrigger" href="#">Menu</a>
+		<div id="offCanvas" class="mobile visible-xs">
+			<div class="cage mobileNavCage">
+				<div class="miscNav">
+					<ul class="limited nav nav-pills">
+						<li><a href="#">EN</a></li>
+						<li class="fontsize">
+							<a href="#" class="font-small">A</a>
+							<a href="#" class="font-medium">A</a>
+							<a href="#" class="font-large">A</a>
+						</li>
+						<li><a href="#" class="contrast">Kontrast</a></li>
+					</ul>
+					<a href="#" class="login">Login</a>
+				</div>	
+				<a href="#" class="quicklinksTrigger">Quicklinks</a>
+				<form class="search">
+					<input type="text" class="input-text" placeholder="Suche" />
+					<input type="submit" class="input-submit" value="Suchen" />
+				</form>
+				<nav id="mobileMainNav">
+					<a href="#" class="backlink">Zurück</a>
+					<ul class="nav nav-default level_1">
+						<li class="level_1">
+							<a class="level_1 trail" href="#">Vor dem Studium</a>
+							<ul class="nav nav-default level_2">
+								<li class="level_2">
+									<a class="level_2 trail" href="#">Studiengänge</a>
+									<ul class="nav nav-default level_3">
+										<li class="level_3"><a class="level_3" href="#">Soziale Arbeit (B.A.)</a></li>
+										<li class="level_3"><a class="level_3 active" href="#">Heilpädagogik / Inklusive Pädagogik (B.A.)</a></li>
+										<li class="level_3"><a class="level_3" href="#">Pflegewissenschaften (B.A.)</a></li>
+										<li class="level_3"><a class="level_3" href="#">Gesundheits- und Pflegemanagement (B.A.)</a></li>
+									</ul>
+								</li>
+								<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+								<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+								<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+							</ul>
+						</li>
+						<li class="level_1">
+							<a class="level_1" href="#">Studium</a>
+							<!--<ul class="nav nav-default level_2">
+								<li class="level_2"><a class="level_2" href="#">Studiengänge</a></li>
+								<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+								<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+								<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+							</ul>-->
+						</li>
+						<li class="level_1">
+							<a class="level_1" href="#">Nach dem Studium</a>
+							<!--<ul class="nav nav-default level_2">
+								<li class="level_2"><a class="level_2" href="#">Studiengänge</a></li>
+								<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+								<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+								<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+							</ul>-->
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div id="topbar-off" class="navbar navbar-inverse navbar-static-top hidden-xs ">
+			<div class="container">
+				<ul class="nav nav-pills quicklinks">
+					<li><a href="#">Bibliothek</a></li>
+					<li><a href="#">eLearning</a></li>
+					<li><a href="#">Förderverein</a></li>
+					<li><a href="#">Webmail</a></li>
+				</ul>
+
+				<div class="loginbox">
+					<form action="">
+						<input type="text" class="input-text" placeholder="Benutzer" />
+						<input type="text" class="input-text" placeholder="Passwort" />
+						<input type="submit" class="input-submit" value="Login" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="topbarTrigger" class="topbarTrigger hidden-xs"></div>
+		<div id="topbar" class="navbar navbar-inverse navbar-static-top hidden-xs" role="navigation">
+			<div class="container">
+				<div class="topbarTrigger"></div>
+				<span class="quicklinks">Quicklinks</span>
+				<ul class="limited">
+					<li><a href="#">EN</a></li>
+					<li class="fontsize">
+						<a href="#" class="font-small">A</a>
+						<a href="#" class="font-medium">A</a>
+						<a href="#" class="font-large">A</a>
+					</li>
+					<li><a href="#" class="contrast">Kontrast</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container" id="cage">
+			<div class="row first">
+				<div class="col-lg-10 col-md-12 col-sm-14"><a id="logo" href="/"><object data="image/efh_logo.svg" type="image/svg+xml"><img src="image/efh_logo.png"></object></a> </div>
+				<div class="col-lg-38 col-md-36 col-sm-34 hidden-xs">
+				
+					<nav id="mainnav" class="navbar navbar-default" role="navigation">
+						<ul class="nav nav-pills">
+							<li><a href="#">Hochschule</a></li>
+							<li><a href="#" class="active">Studieren</a></li>
+							<li><a href="#">Forschen</a></li>
+							<li><a href="#">Weiterbilden </a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-md-12 col-sm-14 hidden-xs">
+					
+					<nav id="subnav" class="vertical-nav navbar navbar-default">
+						
+						<ul class="nav nav-pills level_1">
+							<li class="level_1">
+								<a class="level_1 trail" href="#">Vor dem Studium</a>
+								<ul class="level_2">
+									<li class="level_2">
+										<a class="level_2 trail" href="#">Studiengänge</a>
+										<ul class="level_3">
+											<li class="level_3"><a class="level_3" href="#">Soziale Arbeit (B.A.)</a></li>
+											<li class="level_3"><a class="level_3 active" href="#">Heilpädagogik / Inklusive Pädagogik (B.A.)</a></li>
+											<li class="level_3"><a class="level_3" href="#">Pflegewissenschaften (B.A.)</a></li>
+											<li class="level_3"><a class="level_3" href="#">Gesundheits- und Pflegemanagement (B.A.)</a></li>
+										</ul>
+									</li>
+									<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+									<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+									<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+								</ul>
+							</li>
+							<li class="level_1">
+								<a class="level_1" href="#">Studium</a>
+								<ul class="level_2">
+									<li class="level_2"><a class="level_2" href="#">Studiengänge</a></li>
+									<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+									<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+									<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+								</ul>
+							</li>
+							<li class="level_1">
+								<a class="level_1" href="#">Nach dem Studium</a>
+								<ul class="level_2">
+									<li class="level_2"><a class="level_2" href="#">Studiengänge</a></li>
+									<li class="level_2"><a class="level_2" href="#">Studienorganisation</a></li>
+									<li class="level_2"><a class="level_2" href="#">Beratung</a></li>
+									<li class="level_2"><a class="level_2" href="#">Lehrende</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</nav>
+					
+				</div>
+				<div class="col-lg-38 col-md-36 col-sm-34">
+
+					<figure class="titleimage">
+						<img src="content/title01.jpg" alt="Titelbild 01" />
+					</figure>
+
+					<ol class="breadcrumb">
+						<li><a href="#">Startseite</a></li>
+						<li><a href="#">Studieren </a></li>
+						<li><a href="#">Vor dem Studium</a></li>
+						<li><a href="#">Studiengänge</a></li>
+						<li class="active">Bachelorstudiengang Gemeinepädagogik und Diakonie</li>
+					</ol>
+
+					<div class="row">
+						<div class="col-lg-34 col-md-32 col-sm-30">
+
+							<h1>Bachelorstudiengang Gemeindepädagogik und Diakonie</h1>
+							<h2>Kurzportrait</h2>
+							<p>
+								Der Bachelor-Studiengang Gemeindepädagogik und Diakonie qualifiziert für die kirchlichen Berufe der Gemeindepädagogin/des Gemeindepädagogen und der Diakonin/des Diakons. Die Studierenden werden befähigt, außerschulische religiöse Bildungsprozesse zu gestalten und Menschen in Krisensituationen professionellen Beistand zu leisten.
+							</p>
+							<p>
+								Elementartheologische, human- und sozialwissenschaftliche, gemeindepädagogische, diakonische und kybernetische Kompetenzen werden anwendungsorientiert vermittelt. Die Studierenden erwerben Schlüsselqualifikationen, die dazu befähigen, mit kultureller und religiöser Pluralität sowie mit sozialer Heterogenität handlungsorientiert umzugehen.</br>
+								Der Studiengang ist mit dem Bachelor-Studiengang Soziale Arbeit an der EFH RWL so verzahnt, dass es möglich ist, beide Studiengänge in acht Semestern zu absolvieren.
+							</p>
+							<p>
+								Für den Beruf der Diakonin/ des Diakons ist diese Doppelqualifikation erforderlich.  Diese Ausbildung wird in Kooperation mit dem Martineum in Witten (<a href="#" class="external-link" target="_blank">http://www.martineum.de</a>) gestaltet und sieht eine praxisorientierte Ausbildungsbegleitung mit eigenem Profil vor.
+							</p>
+							<h2>Studiendauer</h2>
+							<p>
+								Der Bachelor-Studiengang Gemeindepädagogik und Diakonie qualifiziert für die kirchlichen Berufe der Gemeindepädagogin/des Gemeindepädagogen und der Diakonin/des Diakons. Die Studierenden werden befähigt, außerschulische religiöse Bildungsprozesse zu gestalten und Menschen in Krisensituationen professionellen Beistand zu leisten.
+							</p>
+							<p>
+								Elementartheologische, human- und sozialwissenschaftliche, gemeindepädagogische, diakonische und kybernetische Kompetenzen werden anwendungsorientiert vermittelt. Die Studierenden erwerben Schlüsselqualifikationen, die dazu befähigen, mit kultureller und religiöser Pluralität sowie mit sozialer Heterogenität handlungsorientiert umzugehen.</br>
+								Der Studiengang ist mit dem Bachelor-Studiengang Soziale Arbeit an der EFH RWL so verzahnt, dass es möglich ist, beide Studiengänge in acht Semestern zu absolvieren.
+							</p>
+							<p>
+								Für den Beruf der Diakonin/ des Diakons ist diese Doppelqualifikation erforderlich.  Diese Ausbildung wird in Kooperation mit dem Martineum in Witten (<a href="#" class="external-link" target="_blank">http://www.martineum.de</a>) gestaltet und sieht eine praxisorientierte Ausbildungsbegleitung mit eigenem Profil vor.
+							</p>
+
+
+						</div>
+						<div class="col-lg-14 col-md-16 col-sm-18">
+							<div class="contentFunctions hidden-xs">
+								<ul class="nav nav-default">
+									<li><a class="linkPrint" href="#">Druckansicht</a></li>
+									<li><a class="linkFriend" href="#">Seite weiterempfehlen</a></li>
+								</ul>								
+							</div>
+
+							<nav class="sidenav navbar navbar-default hidden-xs">
+								<h3>Themen dieser Seite</h3>
+								<ol class="nav nav-default">
+									<li><a href="#" class="active">Kurzportrait</a></li>
+									<li><a href="#">Studiendauer</a></li>
+									<li><a href="#">Gliederung des Studiums</a></li>
+									<li><a href="#">Berufsfelder</a></li>
+									<li><a href="#">Zulassung und Studienvoraussetzungen</a></li>
+									<li><a href="#">Bewerbung</a></li>
+								</ol>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="footer" class="navbar navbar-inverse">
+					<nav id="miscnav" class="miscnav navbar navbar-default">
+						<ul class="miscnav" class="nav nav-pills">
+							<li><a href="#">Impressum</a></li>
+							<li><a href="#">Sitemap</a></li>
+							<li><a href="#">Download</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Stichwortregister</a></li>
+							<li><a href="#">Kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+
+		<!-- build:js scripts/plugins.js -->
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:js({app,.tmp}) scripts/main.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+</body>
+</html>

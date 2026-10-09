@@ -1,0 +1,47 @@
+/* MEDIUM Screen Style */
+
+@media screen and (max-width: 1199px) {
+	.container {
+		max-width: 1199px;
+		width: auto;
+		margin: 0 1em 0 1em;
+	}
+
+	#mainnav {
+		font-size: 2em;
+	}
+
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+
+	/* Slider */
+	.rsts-main p {
+		font-size: 1.6em;
+		line-height: 1.3em;
+	}
+
+	.mod_newslist,
+	.mod_newsarchive {
+		.news-item {
+			height: 36em;
+			min-height: 36em;
+			max-height: 36em;
+		}
+	}
+
+	.ce_gallery>ul {
+		li {
+			width: 46%;
+		}
+	}
+}

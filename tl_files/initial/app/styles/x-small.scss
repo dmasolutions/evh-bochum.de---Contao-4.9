@@ -1,0 +1,166 @@
+/* EXTRA SMALL Screen Style */
+
+@media screen and (max-width: 767px) {
+
+	body {
+		font-size: 12px;
+	}
+	
+	h1 {
+		font-size: 1.7333em;
+		line-height: 1.1538465em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	a#logo {
+		width: 50%;
+		min-width: 265px;
+		min-height: 6em;
+	}
+
+	#cage {
+		padding: 5em 1em 0 1em;
+		font-size: 1.25em;
+		line-height: 1.5em;
+	}
+
+	#mainnav,
+	#subnav,
+	 {
+		display: none;
+	}
+
+	.row.first {
+		margin-bottom: 2em;
+		min-height: 0;
+	}
+	
+	/* Slider */
+	.rsts-main {
+		p {
+			font-size: 1.1em;
+			line-height: 1.2em;
+			max-width: 50%;
+			padding: 0.3em;
+			left: 1em;
+			height: 100%;
+		}
+
+		.up-left p {
+			left: 0;
+		}
+		
+		.up-right p {
+			right: 0;
+			left: inherit;
+		}
+		
+		.down-right p{
+			right: 0;
+			left: inherit;
+		}
+
+		.down-left p{
+			left: 0;
+		}
+	}
+	
+	/* News */
+	.mod_newslist {
+		
+		.block {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+		.news-item {
+			max-height: none;
+			height: auto;
+			min-height: 11.6em;
+		}
+
+		figure {
+			position: absolute;
+		}
+
+		.teaser {
+			margin-left: 17.3em;
+		}
+	}
+
+	/* Responsive Tables */
+
+	table.calendar { 
+		margin-bottom: 0; 
+
+		td,
+		th {
+			position: relative; 
+			white-space: nowrap; 
+			overflow: hidden;
+		}
+	}
+	
+	.pinned { 
+		position: absolute; 
+		left: 0; top: 0; 
+		background: #fff; 
+		width: 35%; 
+		overflow: hidden; 
+		overflow-x: scroll; 
+		border-right: 1px solid #ccc; 
+		border-left: 1px solid #ccc; 
+		display: none;
+	}
+
+	.pinned table { 
+		border-right: none; 
+		border-left: none; 
+		width: 100%; 
+	}
+
+	.pinned table th, 
+	.pinned table td { 
+		white-space: nowrap; 
+	}
+
+	.pinned td:last-child { 
+		border-bottom: 0; 
+	}
+	
+	div.table-wrapper { 
+		position: relative; 
+		margin-bottom: 20px; 
+		overflow: hidden; 
+		border-right: 1px solid #ccc; 
+
+		div.scrollable {
+			margin-left: 0;
+			overflow: scroll; 
+			overflow-y: hidden;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.mod_newslist {
+		figure {
+			position: relative;
+		}
+
+		.teaser {
+			margin-left: 0em;
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.ce_gallery>ul {
+		li {
+			width: 45%;
+		}
+	}
+}

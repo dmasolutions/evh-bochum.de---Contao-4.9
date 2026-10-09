@@ -1,0 +1,25 @@
+#topbar,
+#topbar-off,
+#offCanvas,
+#topbarTrigger,
+#mobileTopBar,
+.mobileNavTrigger,
+.share {
+	display: none!important;
+}
+
+#col-left, 
+#col-right {
+	display: none;
+	width: 0;
+}
+
+#col-main,
+#col-content {
+	width: 100%;
+	width: 100%!important;
+}
+
+figure.titleimage {
+	display: none;
+}

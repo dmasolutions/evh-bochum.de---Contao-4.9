@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="no-js" lang="<?php echo $this->language; ?>">
+	<head>
+		<meta charset="<?php echo $this->charset; ?>">
+		<title><?php echo $this->title; ?></title>
+		<base href="<?php echo $this->base; ?>">
+
+		<meta name="robots" content="<?php echo $this->robots; ?>">
+		<meta name="description" content="<?php echo $this->description; ?>">
+		<meta name="keywords" content="<?php echo $this->keywords; ?>">
+		<meta name="generator" content="Contao Open Source CMS">
+		
+		<?php echo $this->viewport; ?>
+		<?php echo $this->framework; ?>
+		<?php echo $this->stylesheets; ?>
+		<?php echo $this->mooScripts; ?>
+		<?php echo $this->head; ?>
+
+		<!--[if lt IE 9]><script src="<?php echo TL_ASSETS_URL; ?>assets/html5shiv/<?php echo $GLOBALS['TL_ASSETS']['HTML5SHIV']; ?>/html5shiv-printshiv.js"></script><![endif]-->
+		
+		<!-- build:css styles/vendor.css -->
+		<!-- bower:css -->
+
+		<!-- endbower -->
+		<!-- endbuild -->
+		<link type="text/css" href="/tl_files/frontend/styles/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		<!-- build:css(.tmp) /tl_files/frontend/styles/main.css -->
+		<link rel="stylesheet" href="/styles/main.css" type="text/css" />
+		<!-- endbuild -->
+		<!-- build:css(.tmp) /tl_files/frontend/styles/efh.css -->
+		<link rel="stylesheet" href="/styles/efh.css" type="text/css" />
+		<!-- endbuild -->
+		<!-- build:css(.tmp) /tl_files/frontend/styles/print.css -->
+		<link rel="stylesheet" href="/styles/print.css" type="text/css" media="print">
+		<!-- endbuild -->
+	</head>
+	<body id="top" class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+
+		<div id="mobileTopBar" class="mobile visible-xs"></div>
+		<a class="mobileNavTrigger mobile visible-xs svg">Menu</a>
+		<div id="offCanvas" class="mobile visible-xs">
+			<div class="cage mobileNavCage">
+				<div class="miscNav">
+					<?php if ($this->sections['langnav']): ?> 
+						<?php echo $this->sections['langnav']; ?> 
+					<?php endif; ?>
+					<ul class="limited nav nav-pills">
+						<li class="fontsize">
+							<div href="" class="trigger-font-small">A</div>
+							<div href="" class="trigger-font-medium">A</div>
+							<div href="" class="trigger-font-large">A</div>
+						</li>
+						<li><div href="" class="contrast">Kontrast</div></li>
+					</ul>
+					<a href="/login" class="login">Login</a>
+				</div><div class="quicklinkswrap">
+					<?php if ($this->sections['mobquicklinks']): ?> 
+						<?php echo $this->sections['mobquicklinks']; ?> 
+					<?php endif; ?>
+					<div class="quicklinksTrigger">Quicklinks</div>
+					<?php if ($this->sections['mobsearch']): ?> 
+						<?php echo $this->sections['mobsearch']; ?> 
+					<?php endif; ?>
+				</div>	
+				<?php echo $this->sections['mobilenav']; ?> 
+			</div>
+		</div>
+
+		<div id="topbar-off" class="navbar navbar-inverse navbar-static-top hidden-xs toggle">
+			<div class="container">
+				<?php echo $this->sections['quicklinks']; ?> 
+
+				<div class="loginbox">
+					<?php if ($this->sections['login']): ?> 
+					<?php echo $this->sections['login']; ?> 
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+		<div id="topbarTrigger" class="topbarTrigger hidden-xs"></div>
+		<div id="topbar" class="navbar navbar-inverse navbar-static-top hidden-xs" role="navigation">
+			<div class="container">
+				<div class="topbarTrigger"></div>
+				<a class="quicklinks">Quicklinks</a>
+				<?php if ($this->sections['langnav']): ?> 
+					<?php echo $this->sections['langnav']; ?> 
+				<?php endif; ?>
+				<ul class="limited">
+					<li class="fontsize">
+						<div href="" class="trigger-font-small">A</div>
+						<div href="" class="trigger-font-medium">A</div>
+						<div href="" class="trigger-font-large">A</div>
+					</li>
+					<li><div href="" class="contrast">Kontrast</div></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container" id="cage">
+			<div class="row first">
+				<div class="col-lg-10 col-md-12 col-sm-14">
+					<a id="logo" class="svg" href="/">
+						Evangelische Fachhochschule Rheinland-Westfalen-Lippe
+					</a>
+				</div>
+				<div class="col-lg-38 col-md-36 col-sm-34 hidden-xs">
+				
+					<?php echo $this->sections['nav']; ?> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-md-12 col-sm-14 hidden-xs" id="col-left">
+					
+					<?php echo $this->left; ?>
+					
+				</div>
+				<div class="col-lg-38 col-md-36 col-sm-34" id="col-main">
+					<?php if ($this->sections['top']): ?> 
+						<?php echo $this->sections['top']; ?>
+					<?php endif; ?>
+
+					<?php if ($this->sections['breadcrumb']): ?> 
+						<?php echo $this->sections['breadcrumb']; ?> 
+					<?php endif; ?>
+
+					<div class="row">
+						<div class="col-lg-34 col-md-32 col-sm-30" id="col-content">
+							<?php echo $this->main; ?>
+						</div>
+						<div class="col-lg-14 col-md-16 col-sm-18" id="col-right">
+							<?php if ($this->right): ?>
+								<?php echo $this->right; ?>
+							<?php endif; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="footer" class="navbar navbar-inverse">
+					<?php echo $this->footer; ?>
+				</div>
+			</div>
+		</div>
+
+		<?php echo $this->mootools; ?>
+
+		<?php if (!$this->disableCron): ?>
+			<script>
+			<?php if ($this->layout->addJQuery): ?>
+				setTimeout(function(){jQuery.ajax("system/cron/cron.txt",{complete:function(e){var t=e.responseText||0;parseInt(t)<Math.round(+(new Date)/1e3)-<?php echo $this->cronTimeout; ?>&&jQuery.ajax("system/cron/cron.php")}})},5e3)
+			<?php else: ?>
+				setTimeout(function(){(new Request({url:"system/cron/cron.txt",onComplete:function(e){e||(e=0),parseInt(e)<Math.round(+(new Date)/1e3)-<?php echo $this->cronTimeout; ?>&&(new Request({url:"system/cron/cron.php"})).get()}})).get()},5e3)
+			<?php endif; ?>
+			</script>
+		<?php endif; ?>
+
+		<script type="text/javascript" src="/tl_files/frontend/scripts/jquery.jscrollpane.min.js"></script>
+
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js /tl_files/frontend/scripts/plugins.js -->
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+		<script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:js /tl_files/frontend/scripts/svgmagic.js -->
+		<script src="scripts/svgmagic.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:js({app,.tmp}) /tl_files/frontend/scripts/main.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+</body>
+</html>

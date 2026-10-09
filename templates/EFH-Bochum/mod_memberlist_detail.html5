@@ -1,0 +1,73 @@
+<!-- Personen Detail -->
+<div class="<?php echo $this->class; ?> listing block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+<?php if (count($this->record)): ?>
+
+<!-- Felder -->
+<?php
+	$id = $this->record[0]['raw']['id'];
+	$title = $this->record[0]['raw']['title'];  
+	$firstname = $this->record[0]['raw']['firstname']; 
+	$lastname = $this->record[0]['raw']['lastname'];
+	$phone = $this->record[0]['raw']['phone'];
+	$email = $this->record[0]['raw']['email'];
+	$department = $this->record[0]['raw']['department']; 
+	$workscope = strip_tags($this->record[0]['raw']['workscope']); 
+	$officehours = $this->record[0]['raw']['officehours'];
+	$website = $this->record[0]['raw']['website'];
+	$building = $this->record[0]['raw']['building'];
+	$room = $this->record[0]['raw']['room'];
+	$business_connection = $this->record[0]['raw']['business_connection'];
+	$avatar = $this->record[0]['raw']['avatar'] ? \FilesModel::findByPK($this->record[0]['raw']['avatar']):false ;
+?>
+
+<!-- Ausgabe -->
+<div class="single-record">
+
+	<div style="position: relative;">
+		<figure class="avatarwrap" style="overflow: hidden;display: flex;justify-content: center;align-items: center;height: 140px">
+		    <?php if ($avatar):?>
+            <img src="<?= $avatar->path?>" style="width:100px;max-width:100%;min-height: 140px;" />
+            <?php else:?>
+              <img src="files/images/person.gif" style="width:100px;max-width:100%;" />
+            <?php endif;?>
+		</figure>
+		<div class="information">	
+			<h2 class="name"><?php echo($title); ?> <?php echo($firstname); ?> <?php echo($lastname); ?></h2>
+			<p>
+				<?php echo($department); ?><br />
+				F&auml;chergruppe: <?php echo($business_connection); ?><br />
+				<?php echo($workscope); ?><br />
+				<?php echo ($building); ?>
+				Raum: <?php echo($room); ?><br/>
+			</p>
+			<p>
+				<strong>Kontakt:</strong><br />
+
+				<img src="/tl_files/frontend/image/phone.svg" class="svg phone" alt="Phone: "/><?php echo $phone; ?><br />
+		        <a href="mailto:{{email_url::<?php echo $email; ?>}}" target="_blank" title="E-Mail an <?php echo $title; ?> <?php echo $firstname; ?> <?php echo $lastname; ?> senden">{{email_url::<?php echo $email; ?>}}</a><br />
+		    	<?php echo($officehours); ?>
+		    </p>
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- Fehlermeldungen -->
+<?php elseif ($this->invalid): ?>
+
+<p class="error"><?php echo $this->invalid; ?></p>
+<?php else: ?>
+
+<p><?php echo $this->noPublicInfo; ?></p>
+<?php endif; ?>
+
+<!-- Einbindung Artikelseite -->
+{{insert_article::<?php echo($website); ?>}}
+
+<!-- indexer::stop -->
+<p class="back"><a href="<?php echo $this->referer; ?>" title="<?php echo $this->back; ?>"><?php echo $this->back; ?></a></p>
+<!-- indexer::continue -->
+
+</div>

@@ -1,0 +1,24 @@
+<!-- Eventauflistung -->
+<div class="event layout_upcoming<?php echo $this->classUpcoming; ?> block">
+	<div class="item news-item">
+		<div class="date">
+			<?php echo $this->parseDate("d.m.Y", $this->start); ?>
+		</div>
+		<h3>
+			<a href="<?php echo $this->href; ?>" title="<?php echo $this->title; ?> (<?php if ($this->day): echo $this->day; ?>, <?php endif; echo $this->date; if ($this->time): ?>, <?php echo $this->time; endif;?>)"<?php echo $this->target; ?>><?php echo $this->link; ?></a>
+		</h3>
+		<div class="details teaser">
+			<div class="date">Datum: <?php echo $this->parseDate("d.m.Y", $this->startDate); ?></div>
+			<?php if ($this->time): ?>
+				<div class="time">Zeit: <?php echo $this->time; ?></div>
+			<?php endif; ?>
+			<?php if ($this->location): ?>
+				<div class="location">Ort: <?php echo $this->location; ?></div>
+			<?php endif; ?>
+			<p class="more">
+				<a href="<?php echo $this->href; ?>" title="<?php echo $this->title; ?> (<?php if ($this->day): echo $this->day; ?>, <?php endif; echo $this->date; if ($this->time): ?>, <?php echo $this->time; endif;?>)"<?php echo $this->target; ?>><?php echo $this->link; ?></a>
+			</p>
+		</div>
+		
+	</div>
+</div>

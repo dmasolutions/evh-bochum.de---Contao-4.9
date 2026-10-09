@@ -1,0 +1,57 @@
+/* SMALL Screen Style */
+
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 991px;
+		width: auto;
+		margin: 0;
+	}
+
+	#cage {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	#mainnav {
+		font-size: 1.3em;
+	}
+
+	#subnav {
+		font-size: 0.9em;
+
+		li {
+			a {
+			padding-left: 1em;
+			line-height: 1.2em;
+			}
+
+			a.level_2 {
+				padding-left: 0.5em;
+			}
+
+			a.level_3 {
+				padding-left: 0.9em;	
+			}
+		}
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	h3,
+	.sidenav h3 {
+		font-size: 1.25em;
+	}
+	
+	/* Slider */
+	.rsts-main p {
+		font-size: 1.3em;
+		line-height: 1.2em;
+		max-width: 40%;
+	}	
+}

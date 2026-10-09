@@ -1,0 +1,94 @@
+<!-- Personenliste -->
+<div class="<?php echo $this->class; ?> ce_table listing block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<!-- Suchfeld -->
+<?php if ($this->show_searchfield): ?>
+<div class="list_search">
+<form action="<?php echo $this->action; ?>" method="get">
+<div class="formbody">
+<input type="hidden" name="order_by" value="<?php echo $this->order_by; ?>" />
+<input type="hidden" name="sort" value="<?php echo $this->sort; ?>" />
+<input type="hidden" name="per_page" value="<?php echo $this->per_page; ?>" />
+<label for="ctrl_search" class="invisible"><?php echo $this->fields_label; ?></label>
+<select name="search" id="ctrl_search" class="select">
+<?php echo $this->search_fields; ?>
+</select>
+<label for="ctrl_for" class="invisible"><?php echo $this->keywords_label; ?></label>
+<input type="text" name="for" id="ctrl_for" class="text" value="<?php echo $this->for; ?>" />
+<input type="submit" class="submit" value="<?php echo $this->search_label; ?>" />
+</div>
+</form>
+</div>
+<?php endif; ?>
+<?php if ($this->per_page): ?>
+
+<div class="list_per_page">
+<form action="<?php echo $this->action; ?>" method="get">
+<div class="formbody">
+<input type="hidden" name="order_by" value="<?php echo $this->order_by; ?>" />
+<input type="hidden" name="sort" value="<?php echo $this->sort; ?>" />
+<input type="hidden" name="search" value="<?php echo $this->search; ?>" />
+<input type="hidden" name="for" value="<?php echo $this->for; ?>" />
+<label for="ctrl_per_page" class="invisible"><?php echo $this->per_page_label; ?></label>
+<select name="per_page" id="ctrl_per_page" class="select">
+  <option value="10"<?php if ($this->per_page == 10): ?> selected="selected"<?php endif; ?>>10</option>
+  <option value="20"<?php if ($this->per_page == 20): ?> selected="selected"<?php endif; ?>>20</option>
+  <option value="30"<?php if ($this->per_page == 30): ?> selected="selected"<?php endif; ?>>30</option>
+  <option value="50"<?php if ($this->per_page == 50): ?> selected="selected"<?php endif; ?>>50</option>
+  <option value="100"<?php if ($this->per_page == 100): ?> selected="selected"<?php endif; ?>>100</option>
+  <option value="250"<?php if ($this->per_page == 250): ?> selected="selected"<?php endif; ?>>250</option>
+  <option value="500"<?php if ($this->per_page == 500): ?> selected="selected"<?php endif; ?>>500</option>
+</select>
+<input type="submit" class="submit" value="<?php echo $this->per_page_label; ?>" />
+</div>
+</form>
+</div>
+<?php endif; ?>
+
+
+<!-- Liste -->
+<div class="list-record">
+	
+    <?php foreach ($this->tbody as $class=>$row): ?>
+      <div class="personcard_bodys">
+
+		<!-- Person -->
+        <?php foreach ($row as $col): ?> 
+            <?php
+              $title = $col['raw']['title'];  
+              $firstname = $col['raw']['firstname']; 
+              $lastname = $col['raw']['lastname'];
+              $phone = $col['raw']['phone'];
+              $email = $col['raw']['email'];  
+			  $description = $col['raw']['description']; 
+            ?> 
+        <?php endforeach; ?> 
+        <div class="figure">
+          <figure>
+            <a href="<?php echo $this->url; ?>?show=<?php echo $col['id']; ?>">{{avatar::<?php echo $col['id']; ?>?width=100&height=140&mode=M}}</a>
+          </figure>
+        </div>
+        <div class="desc">
+          <h3><?php echo $title; ?> <?php echo $firstname; ?> <?php echo $lastname; ?></h3>
+          <p>
+            <img src="/tl_files/frontend/image/phone.svg" class="svg" alt="Phone: "/><?php echo $phone; ?><br />
+            <a href="mailto:{{email_url::<?php echo $email; ?>}}" target="_blank" title="E-Mail an <?php echo $title; ?> <?php echo $firstname; ?> <?php echo $lastname; ?> senden">{{email_url::<?php echo $email; ?>}}</a><br>
+			<?php echo $description; ?>
+          </p>
+          <a class="more" href="<?php echo $this->url; ?>?show=<?php echo $col['id']; ?>">Profil anzeigen</a>
+        </div>
+         
+
+      </div>
+    <?php endforeach; ?>
+
+
+</div>
+
+<?php echo $this->pagination; ?>
+
+</div>

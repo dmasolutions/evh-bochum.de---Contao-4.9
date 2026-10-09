@@ -1,0 +1,106 @@
+#================================================================================
+# Website-Template : Evangelische_Hochschule_RWL.sql
+#================================================================================
+# Contao-Website   : Evangelische Hochschule RWL
+# Contao-Database  : db_EFHContao
+# Saved by User    : beckmann (Andreas beckmann)
+# Time stamp       : 2017-05-09 at 08:46:02
+#
+# Contao Extension : BackupDB, Version 3.2.0
+# Copyright        : Softleister (www.softleister.de)
+# Author           : Hagen Klemp
+# Licence          : LGPL
+#
+# Visit Contao project page http://www.contao.org for more information
+#
+#-----------------------------------------------------
+# Contao Version 3.5.21
+# Folgende Erweiterungen müssen installiert sein:
+#-----------------------------------------------------
+#   - avatar                      : Version 3.2.3 stable, Build 2
+#   - calendar_extended           : Version 3.6.0 stable, Build 36
+#   - calendar_ical               : Version 3.1.3 stable, Build 8
+#   - changelanguage              : Version 2.2.8 stable, Build 7
+#   - coverpicture                : Version 1.2.3 stable, Build 7
+#   - DC_General                  : Version 1.0.0 alpha3, Build 1
+#   - DokManSystem                : Version 3.0.0 stable, Build 5
+#   - dompdf                      : Version 3.0.0 rc1, Build 31
+#   - downloadmail                : Version 1.0.0 stable, Build 17
+#   - efg                         : Version 2.2.1 stable, Build 5
+#   - events_subscriptions        : Version 1.0.6 stable, Build 20
+#   - ical_creator                : Version 1.0.1 stable, Build 7
+#   - memberlist                  : Version 1.3.2 stable, Build 8
+#   - MultiColumnWizard           : Version 3.3.6 stable, Build 4
+#   - news_categories             : Version 2.7.4 stable, Build 7
+#   - rms                         : Version 3.2.2 stable, Build 7
+#   - rocksolid-antispam          : Version 1.0.3 stable, Build 15
+#   - rocksolid-slider            : Version 1.6.2 stable, Build 6
+#   - search_and_replace          : Version 1.0.2 stable, Build 2
+#   - tabcontrol                  : Version 3.0.4 stable, Build 11
+#   - widget_tree_picker          : Version 2.3.2 stable, Build 3
+#   - xls_export                  : Version 3.0.0 stable, Build 20
+#   - xtmembers                   : Version 3.2.1 stable, Build 5
+#   - !metamodels-contao3-branch
+#   - CeNavigation
+#   - dependency-container
+#   - dokmansystem
+#   - es_easytools
+#   - event-dispatcher
+#   - justtextwidgets
+#   - metamodels
+#   - metamodelsattribute_alias
+#   - metamodelsattribute_checkbox
+#   - metamodelsattribute_combinedvalues
+#   - metamodelsattribute_country
+#   - metamodelsattribute_decimal
+#   - metamodelsattribute_file
+#   - metamodelsattribute_langcode
+#   - metamodelsattribute_longtext
+#   - metamodelsattribute_numeric
+#   - metamodelsattribute_select
+#   - metamodelsattribute_tabletext
+#   - metamodelsattribute_tags
+#   - metamodelsattribute_text
+#   - metamodelsattribute_timestamp
+#   - metamodelsattribute_translatedalias
+#   - metamodelsattribute_translatedcheckbox
+#   - metamodelsattribute_translatedfile
+#   - metamodelsattribute_translatedlongtext
+#   - metamodelsattribute_translatedselect
+#   - metamodelsattribute_translatedtabletext
+#   - metamodelsattribute_translatedtags
+#   - metamodelsattribute_translatedtext
+#   - metamodelsattribute_url
+#   - metamodelsfilter_checkbox
+#   - metamodelsfilter_fromto
+#   - metamodelsfilter_range
+#   - metamodelsfilter_select
+#   - metamodelsfilter_tags
+#   - metamodelsfilter_text
+#   - metapalettes
+#   - pimple-pimple
+#   - symfony-event-dispatcher
+#   - twig
+#   - xnavigation-content
+#
+#================================================================================
+
+#------------------------------------------
+# Installation:
+#------------------------------------------
+
+ 1. Standard-Paket Contao in der Domain aufbauen.
+    (z.B. ZIP entpacken und FTP-Upload auf den Webspace)
+    Noch nicht gleich das InstallTool aufrufen, erst als Punkt 5!
+
+ 2. Installation aller oben gelisteten Erweiterungen.
+
+ 3. Speichern Sie dieses Website-Template im Pfad /templates/ ab.
+
+ 4. Speichern Sie alle für das Website-Template notwendige Dateien
+    im Pfad /templates/ und /files/ oder Subdirectories (genau
+    wie bei der Template-Erstellung).
+
+ 5. Führen Sie jetzt das InstallTool von Contao aus und
+    importieren das Website-Template.
+

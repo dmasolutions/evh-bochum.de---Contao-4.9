@@ -1,0 +1,195 @@
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              #222222 !default;   // #333
+$gray:                   #e5ebf0 !default; // #555
+$gray-light:             #edf4f9 !default;   // #999
+$gray-lighter:           #f9fbfd !default; // #eee
+$brand-primary:         #004e91 !default;
+$brand-primary-light:    #378bd2 !default;
+$brand-secondary:      #c00808 !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #c00808 !default;
+$brand-danger:          #d9534f !default;
+$background-light:    #edf4f9 !default;
+
+body.accessible {
+	color: #000;
+
+	h1 {
+		color: #000;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	#topbar-off {
+		background-color: $brand-primary;
+		border-bottom: 1px solid #fff;
+
+		.loginbox {
+			input.input-text {
+				background-color: #fff;
+				color: $brand-primary;
+				border-color: $brand-primary;
+			}
+
+			input::-webkit-input-placeholder {
+				color: $brand-primary;
+			}
+
+			input:-moz-placeholder {
+				color: $brand-primary;
+				opacity:  1;
+			}
+
+			input::-moz-placeholder {
+				color: $brand-primary;
+				opacity:  1;
+			}
+
+			input:-ms-input-placeholder {
+				color: $brand-primary;
+			}
+
+			input.input-submit {
+				bottom: -2.01em;
+			}
+		}
+	}
+
+	#topbar {
+		a.contrast {
+			color: $brand-primary;
+			background-color: #fff;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			background-color: none;
+		}
+
+		.quicklinks {
+			opacity: 1;
+		}
+	}
+
+	#mainnav {
+
+
+
+		a.active {
+			font-family: 'Open Sans Bold';
+			color: #000;
+		}
+
+		a:hover {
+			color: $brand-primary;
+			text-decoration: underline;
+		}
+	}
+	
+	#subnav {
+
+		li.level_2:nth-last-child(1),
+		li.level_3:nth-last-child(1) {
+			border-bottom: 1px solid $brand-primary;
+		}
+
+		li {
+			margin-bottom: 0;
+			
+			a {
+				background-color: #fff;
+				border-right: 1px solid $brand-primary;
+				border-top: 1px solid $brand-primary;
+				margin-bottom: 0;
+			}
+
+			a.level_1,
+			a.level_2,
+			a.level_3 {
+				background-color: #fff;
+			}
+
+			ul.level_3 a {
+				border-left: 1px solid $brand-primary;
+			}
+
+			a:hover,
+			a:focus {
+				background-color: $brand-primary;
+				text-decoration: underline;
+				color: #fff;
+			}
+
+			a.active {
+				color: #000;
+			}
+
+			a.trail {
+				border-color: $brand-primary;
+			}
+
+			a.active:hover,
+			a.active:active,
+			a.trail:hover,
+			a.trail:active {
+				background-color: $brand-secondary;
+				color: #fff;
+				border-color: $brand-secondary;
+			}
+		}
+
+		li:last-child {
+			border-bottom: 1px solid $brand-primary;
+		}
+	}
+
+	.sidenav {
+		background-color: #fff;
+		border: 1px solid $brand-primary;
+		
+		ol.nav {
+			li {
+				a.active {
+					font-family: 'Open Sans Bold';
+					color: #000;
+				}
+
+				a:hover {
+					color: $brand-primary;
+					text-decoration: underline;
+				}
+			}
+		}		
+	}
+
+	.rsts-main p {
+		background-image: none;
+		background-color: $brand-secondary;
+	}
+
+	.mod_newsarchive, 
+	.mod_newslist,
+	.mod_eventlist {
+
+		.news-item {
+			background-color: transparent;
+			border: 1px solid $brand-primary;
+		}
+
+	}
+
+	.ce_hyperlink.archivelink a {
+		background-color: transparent;
+		border: 1px solid $brand-primary;
+		border-left: 7px solid $brand-primary;
+		padding: .3em .4em .3em 1.2em;
+	}
+
+	.articlenav {
+		background-color: transparent;
+		border-color: $brand-secondary;
+	}
+}

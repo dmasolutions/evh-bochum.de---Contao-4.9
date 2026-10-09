@@ -1,0 +1,10 @@
+<!-- Seitenkopf-Bild -->
+<?php if (!$this->use_as_background && $this->imagepath != null): ?>
+
+<figure class="titleimage <?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+	<img src="<?php echo $this->imagepath; ?>" alt="<?php echo $this->pagetitle; ?>" title="<?php echo $this->pagetitle; ?>"<?php if($this->imgMapID): ?> usemap="#<?php echo $this->imgMapID; ?>"<?php endif; ?>>
+	<?php if($this->imgMapID): ?><?php echo $this->imgMap; ?><?php endif; ?>
+	<div class="titleimage-toggle">Bild verkleinern</div>
+</figure>
+
+<?php endif; ?>

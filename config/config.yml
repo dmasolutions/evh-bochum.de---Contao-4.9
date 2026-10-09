@@ -1,0 +1,14 @@
+contao:
+    search:
+        default_indexer:
+            enable: true
+        index_protected: true
+    crawl:
+        default_http_client_options:
+            verify_peer: false
+doctrine:
+  dbal:
+    connections:
+      default:
+        options:
+          1002: "SET SESSION sql_mode=(SELECT CONCAT(@@sql_mode, ',TRADITIONAL'))"

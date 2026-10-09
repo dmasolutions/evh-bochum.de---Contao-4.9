@@ -1,0 +1,178 @@
+/* Logo 50 Jahre rechts */
+#logo_50{
+    left:1em;
+    width:100%;
+    min-height:60px;
+    position:relative;
+    display:block;
+    background-image:url(/tl_files/frontend/image/50_Jahre_EvH.svg);
+    background-repeat:no-repeat;
+    text-indent:-3000em;
+    background-size:contain;
+}
+
+/* Logo Wissenschaftsrat */
+#logo_wr{
+    left:2em;
+    width:100%;
+    min-height:60px;
+    position:relative;
+    display:block;
+    background-image:url(/tl_files/frontend/image/Siegel_10Jahre_2015.svg);
+    background-repeat:no-repeat;
+    text-indent:-3000em;
+    background-size:contain;
+}
+
+
+#logo_tp{
+    left:2em;
+    width:100%;
+    min-height:60px;
+    position:relative;
+    display:block;
+    background-image:url(/tl_files/frontend/image/topfhd60.jpg);
+    background-repeat:no-repeat;
+    text-indent:-3000em;
+    background-size:contain;
+}
+
+
+
+#foot_logo
+{
+ float:right;
+ margin-right:10px;
+}
+
+
+/* Anpassungen wegen Schutzraum */
+#logo{
+    left: -0.4em;
+    width:100%;
+    min-height:60px;
+}
+
+.row.first{
+    min-height:60px;
+}
+
+#cage{
+    padding-top: 0.5em;
+}
+
+@media screen and (max-width: 767px){
+	#cage {
+		 padding-top: 4em;
+	}
+	.row.first{
+		margin-bottom:0px;
+	}
+}
+
+
+.ce_download.word a {
+    background-image: url("/tl_files/frontend/image/download-doc.svg");
+    background-position-y: 0;
+    background-size: 1.8em auto;
+}
+.ce_download.docx a {
+    background-image: url("/tl_files/frontend/image/download-docx.svg");
+    background-position-y: 0;
+    background-size: 1.8em auto;
+}
+.ce_download.pptx a {
+    background-image: url("/tl_files/frontend/image/download-pptx.svg");
+    background-position-y: 0;
+    background-size: 1.8em auto;
+}
+.ce_download.rtf a {
+    background-image: url("/tl_files/frontend/image/download-rtf.svg");
+    background-position-y: 0;
+    background-size: 1.8em auto;
+}
+#topbar-off .quicklinks {
+    top:0;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+}
+/* Große erweitert wegen den Event Kacheln */
+.mod_newslist .news-item {
+    height: 30em;
+    max-height: 30em;
+    min-height: 30em;
+}
+/* Große erweitert damit gleich den News */
+.mod_eventlist .news-item {
+    height: 14em;
+    max-height: 14em;
+    min-height: 14em;
+}
+/* Memberlist BODYS ANFANG*/
+.mod_memberlist .personcard_bodys {
+    background-color: #edf4f9;
+    float: left;
+    /*height: 100%;*/
+    min-height: 140px;
+    margin-bottom: 2em;
+    margin-right: 5%;
+    position: relative;
+    width: 100%; 
+}
+.mod_memberlist .personcard_bodys .figure {
+    position: absolute;
+}
+.mod_memberlist .personcard_bodys .figure img {
+    position: relative;
+}
+.mod_memberlist .personcard_bodys .desc {
+    margin-left: 110px;
+}
+.mod_memberlist .personcard_bodys .desc h3 {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+.mod_memberlist .personcard_bodys .desc img {
+    height: 1em;
+    margin-right: 0.5em;
+    width: 1em;
+}
+.mod_memberlist .personcard_bodys .more {
+    background-color: #004e91;
+    background-image: url("/tl_files/frontend/image/plus.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    bottom: -1em;
+    height: 2em;
+    position: absolute;
+    right: 1em;
+    text-indent: -30000px;
+    width: 2em;
+}
+.mod_memberlist .personcard_bodys .more:focus, .mod_memberlist .personcard_bodys .more:hover {
+    background-color: #0069c4;
+}
+/* Memberlist BODYS ENDE */
+
+#mainnav{
+    margin-top:0px;
+	font-size: 2.2em;
+}
+
+
+/* Linkfarbe im Slider */
+
+a.sliderlink:link {color:#FFFFFF;}
+
+td.ohne {
+	background-color: #fff;
+	border: none;
+}
+
+.danach {
+	
+	padding-bottom: 10px;
+}

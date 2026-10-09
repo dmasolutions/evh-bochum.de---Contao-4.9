@@ -1,0 +1,31 @@
+# Database backups
+/backups/
+/files/AutoBackupDB/
+/templates/*.sql
+
+# Uploaded content is stored outside Git
+/files/
+
+# Local credentials and installation-specific configuration
+.env.local
+.env.*.local
+/config/parameters.yml
+/system/config/localconfig.php
+
+# Dependencies and generated runtime files
+/vendor/
+node_modules/
+/var/
+/assets/
+/system/cache/
+/system/logs/
+/system/tmp/
+/web/assets/
+/web/share/
+/contao-manager/
+/web/contao-manager.phar.php
+/composer.phar
+
+# macOS metadata
+.DS_Store
+._*

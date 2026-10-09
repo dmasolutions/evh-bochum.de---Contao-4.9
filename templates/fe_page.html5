@@ -1,0 +1,124 @@
+<!-- Seitentemplate Vorlage-Standard -->
+<!DOCTYPE html>
+<html lang="<?php echo $this->language; ?>">
+<head>
+
+  <meta charset="<?php echo $this->charset; ?>">
+  <title><?php echo $this->pageTitle; ?> - <?php echo $this->mainTitle; ?></title>
+  <base href="<?php echo $this->base; ?>">
+
+  <meta name="robots" content="<?php echo $this->robots; ?>">
+  <meta name="description" content="<?php echo $this->description; ?>">
+  <meta name="keywords" content="<?php echo $this->keywords; ?>">
+  <meta name="generator" content="Contao Open Source CMS">
+
+  <?php echo $this->viewport; ?>
+  <?php echo $this->framework; ?>
+  <?php echo $this->stylesheets; ?>
+  <?php echo $this->mooScripts; ?>
+  <?php echo $this->head; ?>
+  <!--[if lt IE 9]><script src="<?php echo TL_ASSETS_URL; ?>assets/html5shiv/<?php echo HTML5SHIV; ?>/html5shiv.js"></script><![endif]-->
+<style>
+#topbar-off .loginbox .submit{position:absolute;bottom:-2em;right:0;height:2em;border:none;background-color:transparent}#topbar-off .loginbox .submit:hover{background-color:#378bd2}
+
+button.submit{background:#004e91;color:#fff;font-weight:700}button.submit:focus,button.submit:hover{background-color:#0069c4;outline:0}
+button {
+    background: #fff;
+    border: 1px solid #004e91;
+    padding: 0.5em;
+    height: 3em;
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+#topbar-off .loginbox button {
+    position: relative;
+    height: 3em;
+    min-width: 5em;
+    width: auto;
+    max-width: 14em;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: 0;
+    background-color: #378bd2;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Open Sans Bold';
+    display: block;
+    float: right;
+    padding: 0 1em;
+    margin-left: 0.5em;
+}
+.mod_search .widget.widget-text {
+        width: 80%;
+    display: inline-block;
+}
+.mod_search input[type=search] {
+        width: 100%;
+}
+.mod_search .widget.widget-submit {
+        width: 14%;
+    display: inline-block;
+}
+</style>
+</head>
+<body id="top" class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
+
+  <?php echo $this->getCustomSections('top'); ?>
+
+  <div id="wrapper">
+
+    <?php if ($this->header): ?>
+      <header id="header">
+        <div class="inside">
+          <?php echo $this->header; ?>
+        </div>
+      </header>
+    <?php endif; ?>
+
+    <?php echo $this->getCustomSections('before'); ?>
+
+    <div id="container">
+      <div id="main">
+        <div class="inside">
+          <?php echo $this->main; ?>
+        </div>
+        <?php echo $this->getCustomSections('main'); ?>
+      </div>
+
+      <?php if ($this->left): ?>
+        <aside id="left">
+          <div class="inside">
+            <?php echo $this->left; ?>
+          </div>
+        </aside>
+      <?php endif; ?>
+
+      <?php if ($this->right): ?>
+        <aside id="right">
+          <div class="inside">
+            <?php echo $this->right; ?>
+          </div>
+        </aside>
+      <?php endif; ?>
+    </div>
+
+    <?php echo $this->getCustomSections('after'); ?>
+
+    <?php if ($this->footer): ?>
+      <footer id="footer">
+        <div class="inside">
+          <?php echo $this->footer; ?>
+        </div>
+      </footer>
+    <?php endif; ?>
+
+  </div>
+
+  <?php echo $this->getCustomSections('bottom'); ?>
+
+  <?php echo $this->mootools; ?>
+
+</body>
+</html>
